@@ -41,4 +41,22 @@ jobs:
     steps:
      - name: Test
        run: dotnet test --no-build --verbosity normal
-    
+  
+  publish:
+    runs-on: ['testing']
+    needs : test
+
+    steps:
+     - name: Publish
+       run: dotnet publish -c Release -o /var/www/simple-api
+       working-directory: ./Simple.Api
+
+  run:
+    runs-on: ['testing']
+    needs : publish
+
+    steps:
+     - name: Restart the app
+       run: |
+          export XDG_RUNTIME_DIR=/run/user/$(id -u)
+          systemctl --user restart simple-api.service
