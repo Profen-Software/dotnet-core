@@ -1,6 +1,11 @@
+using Simple.Api.Interfaces;
+using Simple.Api.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddSingleton<IWeatherService,WeatherService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
