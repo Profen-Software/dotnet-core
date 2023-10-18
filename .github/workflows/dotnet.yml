@@ -9,14 +9,15 @@ on:
   pull_request:
     branches: [ "main" ]
 
+
+env:
+  DOTNET_INSTALL_DIR: "./.dotnet"
+
 jobs:
   build:
 
     runs-on: ['testing']
 
-    env:
-      DOTNET_INSTALL_DIR: "./.dotnet"
-  
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
@@ -27,8 +28,17 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore ./
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
-    - name: Publish
-      run: dotnet publish -c Release -o /var/www/simple-api
-      working-directory: ./Simple.Api
+    # - name: Test
+    #   run: dotnet test --no-build --verbosity normal
+    # - name: Publish
+    #   run: dotnet publish -c Release -o /var/www/simple-api
+    #   working-directory: ./Simple.Api
+
+  test:
+    runs-on: ['testing']
+    needs : build
+
+    steps:
+     - name: Test
+       run: dotnet test --no-build --verbosity normal
+    
