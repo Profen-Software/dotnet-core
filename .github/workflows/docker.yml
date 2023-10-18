@@ -1,0 +1,20 @@
+
+name: .NET core docker compose
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  build:
+
+    runs-on: ['testing']
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: isbang/compose-action@v1.5.1
+      with:
+        compose-file: "./docker-compose.yml"
