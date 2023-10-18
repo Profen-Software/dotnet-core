@@ -1,0 +1,10 @@
+version: "3.4"
+
+services:
+  simple.api:
+    image: ${DOCKER_REGISTRY-}simple-api
+    build:
+      context: .
+      dockerfile: Simple.Api/Dockerfile
+    ports:
+      - "6001:80"
