@@ -13,6 +13,10 @@ jobs:
   build:
 
     runs-on: ['testing']
+
+    env:
+      DOTNET_INSTALL_DIR: "./.dotnet"
+  
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
