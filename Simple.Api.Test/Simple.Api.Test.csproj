@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Simple.Api\Simple.Api.csproj" />
+  </ItemGroup>
+
 </Project>
