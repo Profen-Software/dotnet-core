@@ -20,7 +20,7 @@ public class WeatherServiceTests
     public void GetWeatherForecasts_ReturnsWeatherForecasts()
     {
         // Arrange
-        var expected = 5;
+        var expected = 6;
 
         // Act
         var actual = _weatherService.GetWeatherForecasts();
