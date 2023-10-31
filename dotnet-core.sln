@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Api", "Simple.Api\Si
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Api.Test", "Simple.Api.Test\Simple.Api.Test.csproj", "{588E9A9D-1313-4470-9746-0684ED3F0C55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeter", "GrpcGreeter\GrpcGreeter.csproj", "{21CBF718-7C09-4EA8-9CFF-BBDFFA2362C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{588E9A9D-1313-4470-9746-0684ED3F0C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588E9A9D-1313-4470-9746-0684ED3F0C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{588E9A9D-1313-4470-9746-0684ED3F0C55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CBF718-7C09-4EA8-9CFF-BBDFFA2362C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CBF718-7C09-4EA8-9CFF-BBDFFA2362C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CBF718-7C09-4EA8-9CFF-BBDFFA2362C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CBF718-7C09-4EA8-9CFF-BBDFFA2362C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
