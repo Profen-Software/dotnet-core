@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeter", "GrpcGreeter\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisApp", "RedisApp\RedisApp.csproj", "{C312CB2B-5970-41B0-BE5B-FE831D20D138}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A79656-6B46-4EE3-A75F-3E0F5A1D547C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C312CB2B-5970-41B0-BE5B-FE831D20D138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C312CB2B-5970-41B0-BE5B-FE831D20D138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C312CB2B-5970-41B0-BE5B-FE831D20D138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C312CB2B-5970-41B0-BE5B-FE831D20D138}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
